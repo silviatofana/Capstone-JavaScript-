@@ -40,7 +40,11 @@
 
 ## Video presentation
 
-[View with Zoom]()
+[View with Zoom](https://drive.google.com/file/d/1gdzn9vXAoL6oqAK1gyBKHHbU7T90774y/view?usp=sharing)
+
+## Live version
+
+[Website Live Preview](https://chala.dev/)
 
 <hr />
 
@@ -58,9 +62,6 @@ The project has two user interfaces;
 
 <!-- ABOUT THE PROJECT -->
 
-## Live version
-
-You can see it working
 
 ## Application Instructions
 
@@ -115,7 +116,7 @@ You can see it working
 - Clone the project
 
 ```
-  https://github.com/ichala/Javascript-Capstone.git
+  https://github.com/silviatofana/Capstone-JavaScript-.git
 ```
 
 <hr/>
@@ -145,7 +146,7 @@ This project was built using these technologies.
 
 <!-- CONTACT -->
 
-## contributors
+## Authors
 
 👤 **Silvia Tofana **
 
@@ -153,11 +154,11 @@ This project was built using these technologies.
 - LinkedIn: [@silviatofana](www.linkedin.com/in/silvia-tofana-10b852186)
 - Twitter: [@silviatofana](https://twitter.com/SilviaTofana)
 
-👤 **Joy Kwamboka**
+👤 **Abdo**
 
-- Github: [@kwambiee](https://github.com/kwambiee)
-- Twitter: [@kwambiee](https://twitter.com/kwambiee)
-- Linkedin: [Joy Kwamboka](https://www.linkedin.com/in/joy-kwamboka)
+- GitHub: [@Abdo9826](https://github.com/Abdo9826)
+- Twitter: [@Abdelrahman Mohamed](https://twitter.com/abodyalex1)
+- LinkedIn: [Abdelruhman Mihamed](https://www.linkedin.com/in/abdelruhman-mihamed-a42667179/)
 
 ## 🤝 Contributing
 
