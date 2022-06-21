@@ -3,3 +3,4 @@
 /coverage
 coverage
 coverage/lcov-report/prettify.css
+/dist
