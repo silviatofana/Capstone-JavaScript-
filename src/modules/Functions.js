@@ -1,4 +1,4 @@
-import { modal, Cards, ProductsCounter } from './Dom.js';
+import { ProductsCounter, modal, Cards } from './Dom.js';
 
 function DisplayPopup(data, examples) {
   modal.innerHTML = ` <div class="closeBtn">X</div>
@@ -27,20 +27,18 @@ function DisplayPopup(data, examples) {
                 </div>
                 <div class="popup-comments">
                     <div class="container-comments">
-                        <form class="form">
+                        <form >
                     
                     <textarea id="comment" type="text" placeholder="Comment"/></textarea>
-                    <div class="form-header"><input id="name" type="text" placeholder="Name" /> <button class="submit" id="${data.idCategory}">submit</button></div>
+                    <div class="form-header"><input id="name" type="text" placeholder="Name" /> <button class="submit">submit</button></div>
                         </form>
-                        <div class="Comment-counter">
-                        Total Comments(0)
-                        </div>
                      <hr/>
-                     
                     <div class="comment-list">
-                        
                         <ul class="comments">
-                                        
+                           <li class="single-comment">
+                               <img class="user" src="https://www.w3schools.com/howto/img_avatar.png" alt="user" >
+                               <b class="user-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consectetur architecto quidem molestiae deserunt vero voluptas odit asperiores nemo laborum cum laudantium eaque voluptate esse nobis voluptatem iusto, est maxime!</b>
+                           </li>             
                         </ul>
                     </div>
                 </div>
@@ -84,21 +82,13 @@ function DisplayCards(data) {
           <div class="title-container">
               <h3>${element.strCategory}</h3>
               <div class="interactions">
-              <div><i id="${
-  element.idCategory
-}" class="fa-solid fa-comment fa-lg"></i>  355  </div>       <div><i id="${
-  element.idCategory
-}" class="fa-solid fa-heart fa-lg"></i> <b id="${
-  element.idCategory
-}" class="likes-counter"></b> </div>
+              <div><i id="${element.idCategory}" class="fa-solid fa-comment fa-lg"></i>  355  </div>       <div><i class="fa-solid fa-heart fa-lg"></i> <b id="${element.idCategory}" class="likes-counter">355</b> </div>
               </div>
               <div>
               ${element.strCategoryDescription.substr(0, 50)}...
               </div>
               
-          <button id="${
-  element.idCategory
-}" class="button comment"><i class="fa-solid fa-comments"></i> Comments</button>
+          <button id="${element.idCategory}" class="button comment"><i class="fa-solid fa-comments"></i> Comments</button>
           </div>
   
       </div>
@@ -106,55 +96,8 @@ function DisplayCards(data) {
   });
 }
 
-function calculateComments(data) {
-  const msg = `Total Comments(${data.length})`;
-  return msg;
-}
-
-function CountComment(data) {
-  const CommentCounter = document.querySelector('.Comment-counter');
-  CommentCounter.innerHTML = calculateComments(data);
-}
-
-function DisplayComments(data) {
-  const commentSection = document.querySelector('.comments');
-  let comment = '';
-  data.forEach((item) => {
-    comment += `<li class="single-comment">
-      <img class="user" src="https://www.w3schools.com/howto/img_avatar.png" alt="user" >
-      <b class="user-comment">${item.comment}</b>
-      </li>`;
-  });
-  commentSection.innerHTML = comment;
-  CountComment(data);
-}
-
-function countProducts(data) {
-  return data.length;
-}
-
 function Counter(data) {
-  ProductsCounter.innerHTML = countProducts(data);
+  ProductsCounter.innerHTML = data.products.length;
 }
 
-function CounterLikes(data) {
-  const likeCount = document.querySelectorAll('.likes-counter');
-  likeCount.forEach((item) => {
-    data.forEach((likes) => {
-      if (item.id === likes.item_id) {
-        item.innerHTML = likes.likes;
-      }
-    });
-  });
-}
-
-export {
-  DisplayCards,
-  DisplayPopup,
-  Counter,
-  DisplayComments,
-  CountComment,
-  CounterLikes,
-  calculateComments,
-  countProducts,
-};
+export { DisplayCards, DisplayPopup, Counter };
