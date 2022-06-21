@@ -311,6 +311,10 @@ margin: 200px;
   text-align: center;
 }
 
+.liked {
+  color:red;
+}
+
 
 .img-popcontainer {
   height: 230px;
