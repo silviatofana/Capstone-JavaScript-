@@ -115,7 +115,7 @@ You can see it working
 - Clone the project
 
 ```
-  https://github.com/ichala/Javascript-Capstone.git
+  https://github.com/silviatofana/Capstone-JavaScript-.git
 ```
 
 <hr/>
