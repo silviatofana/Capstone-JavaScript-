@@ -29,8 +29,8 @@ function DisplayPopup(data, examples) {
                     <div class="container-comments">
                         <form class="form">
                     
-                    <textarea id="comment" type="text" placeholder="Comment"/></textarea>
-                    <div class="form-header"><input id="name" type="text" placeholder="Name" /> <button class="submit" id="${data.idCategory}">submit</button></div>
+                    <textarea id="comment" type="text" placeholder="Comment" required/></textarea>
+                    <div class="form-header"><input required id="name" type="text" placeholder="Name" /> <button class="submit" id="${data.idCategory}">submit</button></div>
                         </form>
                         <div class="Comment-counter">
                         Total Comments(0)
@@ -71,6 +71,7 @@ function DisplayPopup(data, examples) {
 }
 
 function DisplayCards(data) {
+  document.querySelector('.cards').innerHTML = '';
   data.forEach((element) => {
     Cards.innerHTML += `
           <div class="card">
@@ -84,9 +85,7 @@ function DisplayCards(data) {
           <div class="title-container">
               <h3>${element.strCategory}</h3>
               <div class="interactions">
-              <div><i id="${
-  element.idCategory
-}" class="fa-solid fa-comment fa-lg"></i>  355  </div>       <div><i id="${
+              <div></div>       <div><i id="${
   element.idCategory
 }" class="fa-solid fa-heart fa-lg"></i> <b id="${
   element.idCategory
@@ -122,7 +121,7 @@ function DisplayComments(data) {
   data.forEach((item) => {
     comment += `<li class="single-comment">
       <img class="user" src="https://www.w3schools.com/howto/img_avatar.png" alt="user" >
-      <b class="user-comment">${item.comment}</b>
+      <b class="user-comment">${item.username}: ${item.comment}</b>
       </li>`;
   });
   commentSection.innerHTML = comment;
@@ -149,5 +148,12 @@ function CounterLikes(data) {
 }
 
 export {
-  DisplayCards, DisplayPopup, Counter, DisplayComments, CountComment, CounterLikes,
+  DisplayCards,
+  DisplayPopup,
+  Counter,
+  DisplayComments,
+  CountComment,
+  CounterLikes,
+  calculateComments,
+  countProducts,
 };
