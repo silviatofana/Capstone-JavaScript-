@@ -131,16 +131,17 @@ export default class Api {
     );
   };
 
+
    CountLikes = async () => {
-     await fetch(
-       `${this.InvolvementApiEP}apps/${this.InvolvementAppID}/likes/`,
-     ).then((response) => response.json())
-       .then((json) => {
-         if (json.constructor === Array) {
-           CounterLikes(json);
-         }
-       });
-   };
+    await fetch(
+      `${this.InvolvementApiEP}apps/${this.InvolvementAppID}/likes/`,
+    ).then((response) => response.json())
+      .then((json) => {
+        if (json.constructor === Array) {
+          CounterLikes(json);
+        }
+      });
+  };
 
   CountComments = async (data) => {
     await fetch(
@@ -150,6 +151,7 @@ export default class Api {
       .then((json) => {
         if (json.constructor === Array) {
           CountComment(json);
+
         }
       });
   };
