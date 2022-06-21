@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -88,9 +88,9 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -105,29 +105,32 @@ nav,
 section {
   display: block;
 }
-body {
-  line-height: 1;
-}
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
 *,
 *::before,
 *::after {
@@ -141,19 +144,23 @@ table {
 
 body {
   background-color: #f2d2bd;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bolder;
   letter-spacing: 0.2em;
   color: #6c757d;
+  line-height: 1;
 }
+
 .nav {
   margin-top: 1.5rem;
 }
+
 .nav-items {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+
 .nav-items li {
   list-style: none;
   margin-left: 5%;
@@ -171,11 +178,6 @@ body {
   font-size: 20px;
 }
 
-
-.form {
-  display: flex;
-  flex-direction: column;
-}
 .popup-food img {
   width: 70%;
   height: 300px;
@@ -187,25 +189,31 @@ body {
   text-align: center;
   margin: 1rem;
 }
+
 .description {
   letter-spacing: 0.2em;
 }
+
 .comment-title {
   text-align: center;
   margin: 0.8rem;
 }
+
 .display-comments {
   display: flex;
   justify-content: center;
 }
+
 .add-comm {
   text-align: center;
   margin: 1rem;
 }
+
 .form {
   width: 300px;
   margin-left: 10%;
 }
+
 .form .name {
   padding: 0.5rem;
   width: 70%;
@@ -213,6 +221,7 @@ body {
   border: 2px solid black;
   font-weight: bolder;
 }
+
 .form .insights {
   padding-bottom: 20%;
   padding-top: 0.8rem;
@@ -222,16 +231,14 @@ body {
   font-weight: bolder;
 }
 
-
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center; 
-gap: 30px;
-margin: 200px;
+  align-items: center;
+  gap: 30px;
+  margin: 200px;
 }
-
 
 .social-links {
   display: flex;
@@ -239,18 +246,20 @@ margin: 200px;
   justify-content: center;
   margin-top: 1rem;
 }
+
 .icon {
   border-radius: 50%;
   margin-left: 2rem;
 }
-.footer {
 
+.footer {
   bottom: 1rem;
   width: 100%;
   margin: 1rem auto;
   border-top: 1px solid rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0px 7px 3px -3px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 7px 3px -3px rgba(0, 0, 0, 0.5);
 }
+
 .licence {
   text-align: center;
   padding: 1rem;
@@ -258,11 +267,22 @@ margin: 200px;
   font-weight: bolder;
 }
 
+.spinner {
+  padding: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
 .popup-container {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  margin-top: -30px;
+  margin-top: -23px;
   backdrop-filter: blur(10px);
   z-index: 999;
   display: flex;
@@ -272,20 +292,22 @@ margin: 200px;
 }
 
 .popup {
-  max-height: 80%;
-  max-width: 90%;
+  height: 80%;
+  width: 90%;
   overflow-y: scroll;
+  overflow-x: hidden;
   background-color: #f4f4f4;
 }
 
 .popup-header {
   --stripe: #cfd8dc;
   --bg: #e1e1e1;
-  background: linear-gradient(135deg, #e1e1e1 25%, transparent 25%) -50px 0,
+
+  background:
+    linear-gradient(135deg, #e1e1e1 25%, transparent 25%) -50px 0,
     linear-gradient(225deg, #e1e1e1 25%, transparent 25%) -50px 0,
     linear-gradient(315deg, #e1e1e1 25%, transparent 25%),
     linear-gradient(45deg, #e1e1e1 25%, transparent 25%);
-  background-size: 100px 100px;
   background-color: var(--stripe);
   display: flex;
   background-size: cover;
@@ -299,11 +321,10 @@ margin: 200px;
 
 .popup-header > .img-poppop {
   position: absolute;
-  bottom: 0px;
-  top: 0px;
-  box-shadow: inset 0px 0px 10px 20px white;
+  bottom: 0;
+  top: 0;
+  box-shadow: inset 0 0 10px 20px white;
 }
-
 
 .card {
   display: inline-block;
@@ -312,17 +333,17 @@ margin: 200px;
 }
 
 .liked {
-  color:red;
+  color: red;
 }
-
 
 .img-popcontainer {
   height: 230px;
   width: 200px;
   overflow: hidden;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0 0 20px 20px;
   display: inline-block;
 }
+
 .single-comment {
   margin: 10px;
   display: flex;
@@ -330,9 +351,11 @@ margin: 200px;
   gap: 6px;
   align-items: center;
 }
+
 .comment-list {
   height: 100%;
 }
+
 b {
   font-size: 12px;
   letter-spacing: 1px;
@@ -348,6 +371,7 @@ b {
   height: 100px;
   width: 100px;
 }
+
 .user {
   height: 50px;
   width: 50px;
@@ -357,28 +381,16 @@ b {
 .img-popcontainer img {
   transform: skew(0deg, -13deg);
   height: 250px;
-  margin: -35px 0px 0px -70px;
+  margin: -35px 0 0 -70px;
 }
 
-.img {
-  display: inline-block;
-  border-radius: 20px;
-  overflow: hidden;
-  padding: 0px;
-  transform: skew(0deg, 13deg);
-  font-size: 0px;
-  margin: 30px 0px 0px 0px;
-  background: #c8c2c2;
-  height: 250px;
-  width: 200px;
-}
 .imgex {
   display: inline-block;
   border-radius: 20px;
   overflow: hidden;
-  padding: 0px;
-  font-size: 0px;
-  margin: 30px 0px 0px 0px;
+  padding: 0;
+  font-size: 0;
+  margin: 30px 0 0 0;
   background: #c8c2c2;
   height: 150px;
   width: 200px;
@@ -389,58 +401,50 @@ b {
   letter-spacing: 1px;
 }
 
-.title-container {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-}
 .img-container {
-    height: 230px;
-    width: 200px;
-    overflow: hidden;
-    border-radius: 0px 0px 20px 20px;
-    display: inline-block;
+  transition: transform 0.5s ease;
+  height: 230px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 0 0 20px 20px;
+  display: inline-block;
 }
 
 .img-container img {
-    transform: skew(0deg, -13deg);
-    height: 250px;
-    margin: -35px 0px 0px -70px;
+  transform: skew(0deg, -13deg);
+  height: 250px;
+  margin: -35px 0 0 -70px;
 }
 
 .img {
-    display: inline-block;
-    border-radius: 20px;
-    overflow: hidden;
-    padding: 0px;
-    transform: skew(0deg, 13deg);
-    font-size: 0px;
-    margin: 30px 0px 0px 0px;
-    background: #c8c2c2;
-    height: 250px;
-    width: 200px;
-}
-
-.img-container img {
-  transition: transform .5s ease;
+  display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0;
+  transform: skew(0deg, 13deg);
+  font-size: 0;
+  margin: 30px 0 0 0;
+  background: #c8c2c2;
+  height: 250px;
+  width: 200px;
 }
 
 .img-container img:hover {
-
   transform: scale(0.8);
 }
 
 .title-container {
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   padding: 120px 20px 20px 20px;
   border-radius: 20px;
   background: #fff;
-  margin: -120px 0px 0px 0px;
+  margin: -120px 0 0 0;
   line-height: 19px;
   font-size: 14px;
 }
 
 .title-container h3 {
-  margin: 20px 0px 10px 0px;
+  margin: 20px 0 10px 0;
   color: #04bcff;
   font-size: 18px;
 }
@@ -457,7 +461,7 @@ b {
 
 .comment {
   padding: 10px;
-  margin :20px;
+  margin: 20px;
   background-color: #04bcff;
   border: 0;
   border-radius: 5%;
@@ -478,6 +482,7 @@ b {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: space-between;
 }
 
 .details {
@@ -485,6 +490,7 @@ b {
   max-width: 70%;
   flex-direction: column;
 }
+
 .closeBtn {
   display: flex;
   justify-content: center;
@@ -515,6 +521,7 @@ b {
 .popup-comments {
   width: 30%;
 }
+
 .container-comments {
   width: 100%;
   background-color: rgba(221, 218, 218, 0.453);
@@ -529,11 +536,10 @@ form {
   gap: 5px;
   flex-direction: column;
 }
+
 #name {
   max-width: 50%;
-
   padding: 12px 20px;
-
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -543,13 +549,13 @@ form {
 #comment {
   max-width: 80%;
   padding: 12px 20px;
-
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   resize: none;
 }
+
 .submit {
   width: 100px;
   background-color: #4caf50;
@@ -605,11 +611,13 @@ form {
     flex-direction: column;
     width: 100%;
   }
+
   .details {
     display: flex;
     max-width: 100%;
     flex-direction: column;
   }
+
   .images {
     display: none;
   }
@@ -617,6 +625,7 @@ form {
   .popup-comments {
     width: 100%;
   }
+
   .closeBtn {
     display: flex;
     justify-content: center;
@@ -630,4 +639,3 @@ form {
     border-radius: 5px;
   }
 }
-
