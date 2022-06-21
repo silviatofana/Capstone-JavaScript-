@@ -98,7 +98,7 @@ You can see it working
   Run
 
 ```
-  git clone https://github.com/ichala/Javascript-Capstone.git
+  git clone https://github.com/silviatofana/Capstone-JavaScript-.git
 ```
 
 - Install the necessary dependancies
@@ -163,7 +163,7 @@ This project was built using these technologies.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ichala/Javascript-Capstone/issues).
+Feel free to check the [issues page](https://github.com/silviatofana/Capstone-JavaScript-/issues).
 
 ## Show your support
 
