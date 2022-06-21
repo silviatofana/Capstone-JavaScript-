@@ -1,4 +1,4 @@
-import './reset.css';
+import './style.css';
 import Api from './modules/Api.js';
 
 const ApiCalls = new Api();
