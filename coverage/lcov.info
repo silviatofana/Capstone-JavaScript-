@@ -17,6 +17,7 @@ FN:3,DisplayPopup
 FN:51,(anonymous_1)
 FN:68,(anonymous_2)
 FN:73,DisplayCards
+
 FN:75,(anonymous_4)
 FN:108,calculateComments
 FN:113,CountComment
@@ -27,6 +28,7 @@ FN:135,Counter
 FN:139,CounterLikes
 FN:141,(anonymous_12)
 FN:142,(anonymous_13)
+
 FNF:14
 FNH:2
 FNDA:0,DisplayPopup
@@ -55,6 +57,7 @@ DA:68,0
 DA:69,0
 DA:74,0
 DA:75,0
+
 DA:76,0
 DA:109,2
 DA:110,2
@@ -69,14 +72,17 @@ DA:128,0
 DA:132,2
 DA:136,0
 DA:140,0
+
 DA:141,0
 DA:142,0
 DA:143,0
 DA:144,0
+
 LF:30
 LH:3
 BRDA:143,0,0,0
 BRDA:143,0,1,0
+
 BRF:2
 BRH:0
 end_of_record
