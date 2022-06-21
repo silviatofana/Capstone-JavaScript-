@@ -1,4 +1,5 @@
 /node_modules
 .DS_Store
 /dist
-/coverage/
+/coverage/lcov-report/base.css
+coverage/lcov-report/prettify.css
