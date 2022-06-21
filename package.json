@@ -11,15 +11,15 @@
     },
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/ichala/Javascript-Capstone.git"
+      "url": "git+https://github.com/silviatofana/Capstone-Javascript-.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-      "url": "https://github.com/ichala/Javascript-Capstone/issues"
+      "url": "https://github.com/silviatofana/Capstone-Javascript-/issues"
     },
-    "homepage": "https://github.com/ichala/Javascript-Capstone#readme",
+    "homepage": "https://github.com/silviatofana/Capstone-Javascript-#readme",
     "devDependencies": {
       "@babel/plugin-transform-modules-commonjs": "^7.17.9",
       "babel-eslint": "^10.1.0",
