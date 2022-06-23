@@ -44,7 +44,7 @@
 
 ## Live version
 
-[Website Live Preview](https://chala.dev/)
+https://silviatofana.github.io/Capstone-JavaScript-/
 
 <hr />
 
