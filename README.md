@@ -40,7 +40,7 @@
 
 ## Video presentation
 
-[View with Zoom](https://drive.google.com/file/d/1gdzn9vXAoL6oqAK1gyBKHHbU7T90774y/view?usp=sharing)
+https://www.loom.com/share/67b10c5c746742d3a04a2ed444871c7a
 
 ## Live version
 
