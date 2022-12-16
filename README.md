@@ -149,7 +149,6 @@ This project was built using these technologies.
 ## Authors
 
 👤 **Silvia Tofana **
-
 - GitHub: [@silviatofana](https://github.com/silviatofana)
 - LinkedIn: [@silviatofana](www.linkedin.com/in/silvia-tofana-10b852186)
 - Twitter: [@silviatofana](https://twitter.com/SilviaTofana)
